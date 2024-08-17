@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% block body %}
+    {% comment %} <div class="container">
+      <div class="navbar">
+        <div class="nav">
+          <div class="logo_text">
+            <img
+              src="/media/homepage-images/homepage_logo.svg"
+              alt="header-logo"
+              class="header_logo"
+            />
+          </div>
+
+          <ul class="header_menu">
+            <li><a href="">Home</a></li>
+            <li>
+              <a href="">Shop <img src="/media/homepage-images/down.svg" alt="down" /></a>
+              <ul class="dropdown">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+              </ul>
+            </li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav_login">
+          <ul class="header_icon">
+            <li>
+              <button class="icon-button">
+                <img src="/media/homepage-images/search_icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="icon-button">
+                <img src="/media/homepage-images/fav_icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="icon-button">
+                <img src="/media/homepage-images/shopbuy_icon.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+          <button class="login-button"><span>Login</span></button>
+        </div>
+      </div>
+    </div> {% endcomment %}
+
+    <div class="order_summery">
+      <div class="container">
+        <div class="order">
+          <div>
+          <div class="order_head_text">
+            <h1>Review Your Order</h1>
+          </div>
+
+          <div class="order_body">
+            <div class="order_left">
+              <div class="order_img">
+                <img src="/media/homepage-images/order.png" alt="" />
+              </div>
+
+              <div class="order_content">
+                <div class="order_head">
+                  <h3>Estimated delivery: 23 July 2023</h3>
+                </div>
+                <div class="order_list">
+                  <div class="order_product">
+                    <div class="order_pro_img">
+                      <img src="/media/homepage-images/pro7.png" alt="" />
+                    </div>
+                    <div class="order_pro_detail">
+                      <h5>Modern Sofa Chair</h5>
+                      <span>$300.00</span>
+                      <span>QTY: 1</span>
+                    </div>
+                  </div>
+
+                  <div class="order_product">
+                    <div class="order_pro_img">
+                      <img src="/media/homepage-images/pro4.png" alt="" />
+                    </div>
+                    <div class="order_pro_detail">
+                      <h5>Modern Side Table</h5>
+                      <span>$140.00</span>
+                      <span>QTY: 1</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="shipping_address_content">
+                  <div class="shipping_add_text">
+                    <h3>Shipping Address</h3>
+                  </div>
+                </div>
+
+                <div class="adress_edit">
+                  <div class="adress_edit_name">
+                    <h4>Kristin Watson</h4>
+                    <span>4140 Parker Rd. Allentown, New Mexico 31134</span>
+                  </div>
+                  <div>
+                    <button class="adress_edit_btn">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                    </button>
+                  </div>
+
+                  <div class="payment_meth">
+                    <div class="payment_meth_text">
+                      <h4>Payment Method</h4>
+                    </div>
+
+                    <div class="debit">
+                        
+                      <h4>Debit Card (.... .... .... ..89)</h4>
+                      <button class="debit_card_edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout_right">
+              <div class="subtotal">
+                <h4>Subtotal</h4>
+                <h4>$440</h4>
+              </div>
+
+              <span>Enter Discount Code</span>
+
+              <div class="coupon">
+                <div class="coupon_input">
+                  <input
+                    type="text"
+                    id="coupon-code"
+                    placeholder="Enter discount code"
+                  />
+                  <button id="apply-coupon">Apply</button>
+                </div>
+              </div>
+              <div class="delivery">
+                <div>Delivery charge</div>
+                <div>$5.00</div>
+              </div>
+
+              <div class="total">
+                <h4>Grand Total</h4>
+                <h4>$445.00</h4>
+              </div>
+
+              <div class="checkout">
+                <button id="place_order_btn">Place order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock body %}
+
+
+    <!-- <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Order Confirmation</h1>
+        <p>Your order is confirmed. Thanks for shopping!</p>
+        <p>Your order hasn’t shipped yet, but we will send you an email when it’s done.</p>
+      </div>
+    </div> -->
+
+
+
+    
