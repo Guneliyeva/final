@@ -21,8 +21,9 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('', home_view,name="home"),
-    path('homepage/', homepage,name="homepage"),
+     path('', homepage,name="homepage"),
+    # path('', home_view,name="home"),
+    # path('homepage/', homepage,name="homepage"),
     path('products/', products_view,name="products"),
     path('products-details/<int:id>', product_details,name="products-details"),
     path('product-api/',include('home.api.urls')),
